@@ -1,0 +1,11 @@
+torch
+langchain-core
+langchain-community
+langchain-text-splitters
+pypdf
+numpy
+sentence-transformers>=2.7.0
+transformers>=4.51.0
+accelerate
+pymilvus==3.0.2
+openai
