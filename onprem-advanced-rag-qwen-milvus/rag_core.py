@@ -91,9 +91,6 @@ def print_chunks(chunks):
 # Embedding modelinin yalnızca ilk ihtiyaçta yüklenebilmesi için başlangıç değerini None yapar.
 _embedding_model = None
 
-# BGE reranker modelinin yalnızca ilk ihtiyaçta yüklenmesi için başlangıç değerini None yapar.
-_reranker_model = None
-
 # Qwen embedding modelini ilk ihtiyaç olduğunda yükleyen fonksiyonu tanımlar.
 def get_embedding_model():
 
@@ -336,6 +333,9 @@ def hybrid_search(query, top_k=20):
 # ============================================================
 # RERANKING
 # ============================================================
+
+# BGE reranker modelinin yalnızca ilk ihtiyaçta yüklenmesi için başlangıç değerini None yapar.
+_reranker_model = None
 
 # BGE reranker modelini ilk ihtiyaçta yükleyen ortak fonksiyonu tanımlar.
 def get_reranker():
